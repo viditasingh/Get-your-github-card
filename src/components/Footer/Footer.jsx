@@ -20,12 +20,12 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="/" className={({isActive})=>`${isActive ? "text-orange-700" : "text-gray-700"} hover:text-orange-700`}>
+                                    <Link to="/" className={`hover:text-orange-700`}>
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about" className={({isActive})=>`${isActive ? "text-orange-700" : "text-gray-700"} hover:text-orange-700`}>
+                                    <Link to="/about" className={`hover:text-orange-700`}>
                                         About
                                     </Link>
                                 </li>
@@ -37,7 +37,7 @@ export default function Footer() {
                                 <li className="mb-4">
                                     <a
                                         href="https://github.com/hiteshchoudhary"
-                                        className="hover:underline"
+                                        className={`hover:underline`}
                                         target="_blank"
                                         rel="noreferrer"
                                     >
