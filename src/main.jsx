@@ -1,9 +1,9 @@
-import {createBrowserRouter,RouterProvider} from "react-router";
+import {createBrowserRouter,createRoutesFromElements,Route,RouterProvider} from "react-router";
 
 import {createRoot} from "react-dom/client";
 import { StrictMode } from "react";
 import Layout from "./Layout";
-import {About, Home, Header, Footer, Contact} from './components/index.js'
+import {About, Home, Usercard, Contact} from './components/index.js'
 
 const router = createBrowserRouter([
   {
@@ -21,10 +21,15 @@ const router = createBrowserRouter([
       {
         path: "contact-us",
         element: <Contact/>
+      },
+      {
+        path: "user/:username",
+        element: <Usercard/>
       }
     ]
   },
 ]);
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
