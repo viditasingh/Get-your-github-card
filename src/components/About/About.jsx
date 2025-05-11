@@ -17,6 +17,7 @@ export default function About() {
                       </h2>
                       <p className="mt-6 text-gray-600">
                           Put in your username and your custom github card will be generated.
+                          <br /><b>Put the username in the url as: localhost:5173/usercard/<i>yourusername</i></b>
                       </p>
                       <p className="mt-4 text-gray-600">
                           The card comprises of github your profile picture, name, followers, number of repositories. 

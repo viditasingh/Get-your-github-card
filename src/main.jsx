@@ -4,6 +4,7 @@ import {createRoot} from "react-dom/client";
 import { StrictMode } from "react";
 import Layout from "./Layout";
 import {About, Home, Usercard, Contact} from './components/index.js'
+import { githubInfo } from "./components/Usercard/Usercard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,9 @@ const router = createBrowserRouter([
         element: <Contact/>
       },
       {
-        path: "user/:username",
-        element: <Usercard/>
+        path: "usercard/:username",
+        element: <Usercard/>,
+        loader: githubInfo
       }
     ]
   },
