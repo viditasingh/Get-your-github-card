@@ -9,7 +9,7 @@ A modern React application that allows users to view GitHub profile data in an a
 - Clean and modern UI with Tailwind CSS
 
 ## Demo
-Enter any GitHub username after the ```/user/``` path to see their profile card! Example: `http://localhost:5173/user/yourusername`
+Enter any GitHub username after the ```/usercard/``` path to see their profile card! Example: `http://localhost:5173/usercard/yourusername`
 
 ## Technologies Used
 
@@ -75,11 +75,8 @@ github-profile-card/
 ## Usage
 1. Navigate to the homepage
 2. Click on "Usercard" in the navigation
-3. Enter a GitHub username in the URL (e.g., /user/johndoe)
+3. Enter a GitHub username in the URL (e.g., /usercard/johndoe)
 4. View the generated profile card with user details
 
-## Customization
-- Update the UI or add more GitHub profile details in src/App.jsx.
-- Change styles in src/index.css or use Tailwind utility classes.
 ## License
 This project is for educational purposes only.
