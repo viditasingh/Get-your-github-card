@@ -1,18 +1,49 @@
-# Get Your GitHub Card
-
-A React application that allows users to view and interact with GitHub profile cards. Built with Vite, React, and Tailwind CSS.
+# GitHub Profile Card Generator
+A modern React application that allows users to view GitHub profile data in an attractive card format. Built with React Router, Tailwind CSS, and Vite.
 
 ## Features
+- Dynamic GitHub profile card generation based on username
+- Real-time data fetching from GitHub API
+- Responsive design for mobile and desktop
+- Navigation between different pages with React Router
+- Clean and modern UI with Tailwind CSS
 
-- Display a GitHub user's profile card with avatar, username, and other details
-- Responsive and modern UI
-- Fast development with Vite and React 19
+## Demo
+Enter any GitHub username after the ```/user/``` path to see their profile card! Example: `http://localhost:5173/user/yourusername`
 
 ## Technologies Used
 
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://react.dev/) - UI library
+- [React Router](https://reactrouter.com/) - For navigation and data loading
+- [Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite) - For styling
+- [Vite](https://vite.dev/) - Fast development environment
+- **GitHub API** - For fetching user data
+
+## Project Structure
+
+```
+github-profile-card/
+│
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   │   └── Header.jsx     # Navigation header
+│   │   ├── Usercard/
+│   │   │   └── Usercard.jsx   # GitHub profile card component
+│   │   ├── Home/
+│   │   ├── About/
+│   │   └── Contact/
+│   │
+│   ├── Layout.jsx             # Main layout wrapper
+│   ├── main.jsx               # App entry point with router config
+│   └── index.css              # Global styles
+│
+├── public/                    # Static assets
+└── package.json               # Project dependencies
+```
+
+# Screenshot
+![usercard image](https://i.ibb.co/m5nD71F9/Screenshot-2025-05-12-013657.png)
 
 ## Getting Started
 
@@ -41,18 +72,11 @@ A React application that allows users to view and interact with GitHub profile c
 
 4. Open http://localhost:5173 in your browser.
 
-## Project Structure
-```
-Get your github card/
-│-- src/
-│   │-- App.jsx
-│   │-- main.jsx
-│   │-- [index.css](http://_vscodecontentref_/2)
-│-- public/
-│-- [package.json](http://_vscodecontentref_/3)
-│-- [vite.config.js](http://_vscodecontentref_/4)
-│-- [README.md](http://_vscodecontentref_/5)
-```
+## Usage
+1. Navigate to the homepage
+2. Click on "Usercard" in the navigation
+3. Enter a GitHub username in the URL (e.g., /user/johndoe)
+4. View the generated profile card with user details
 
 ## Customization
 - Update the UI or add more GitHub profile details in src/App.jsx.
